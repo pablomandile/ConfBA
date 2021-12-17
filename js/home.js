@@ -1,6 +1,6 @@
 document.getElementById("btnOrador").onclick = function () {
-    location.href = "../php/ConfBSAS.php#formorador";
+    location.href = "../pages/ConfBSAS.php#formorador";
 };
 document.getElementById("btnTickets").onclick = function () {
-    location.href = "../php/tickets.php";
+    location.href = "../pages/tickets.php";
 };
