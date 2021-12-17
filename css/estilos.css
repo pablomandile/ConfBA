@@ -32,10 +32,10 @@
     min-height: 80vh;
 }
 #foot{
-    background: linear-gradient(
-90deg, rgb(9, 39, 53), rgb(24, 108, 156));
+    background: linear-gradient(90deg, rgb(9, 39, 53), rgb(24, 108, 156));
     min-height: 80px;
     margin-top: 3em !important;
+    position:relative;
 }
 #foot a{
     color: white !important;
