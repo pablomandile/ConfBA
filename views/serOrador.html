@@ -2,27 +2,60 @@
 <div id="formorador" class="container mt-5">
     <div id="titulo1"> 
         <p  class="text-center text-secondary">CONVIÉRTETE EN UN</p>
-        <h3>ORADOR</h3>
-        <p  class="text-center">Anótate como orador para dar una <span id="subrayado"><a href="#staticBackdrop" data-bs-toggle="modal" data-bs-target="#staticBackdrop">charla ignite</a></span>. Cuéntanos de qué
-            quieres hablar!</p>
+        <h3>SPONSOR</h3>
+        <p  class="text-center">Anótate como <span id="subrayado"><a href="#staticBackdrop" data-bs-toggle="modal" data-bs-target="#staticBackdrop">sponsor</a></span> del evento 
+        y obtiene pases VIP para todas las charlas y workshops para 3 personas!</p>
     </div>
     <form id="datosorador">
         <div class="row mt-3 mb-3">
             <div class="col">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required>
             </div>
         </div>
-
+        <div class="row mt-3 mb-3">
+            <div class="col">
+                <input type="email" class="form-control" placeholder="Email" aria-label="Correo" required>
+            </div>
+        </div>
+        <div class="row mt-3 mb-3">
+            <div class="col">
+                        <input type="text" class="form-control" placeholder="Telefono" aria-label="Telefono" required>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Empresa" aria-label="Empresa" required>
+            </div>
+        </div>
+        <div class="row mt-3 mb-3">
+            <p>Informanos quienes serán los participantes que serán VIP</p>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre y apellido" aria-label="Vip1" required>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre y apellido" aria-label="Vip2" required>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Nombre y apellido" aria-label="Vip3" required>
+            </div>
+        </div>
+        <p>Elige el tipo de sponsor</p>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="sponsorPlata">
+            <label class="form-check-label" for="inlineRadio1">SPONSOR PLATA</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="sponsorOro">
+            <label class="form-check-label" for="inlineRadio2">SPONSOR ORO</label>
+        </div>
         <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                 style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Sobre qué quieres Hablar?</label>
+            <label for="floatingTextarea2">Dejanos un comentario</label>
         </div>
-        <p id="conv3" class="text-secondary fs-6 mb-2">Recuerda incluir un título para tu charla</p>
-        <button id="bt-submit" type="submit" class="btn btn-success mb-4">Enviar</button>
+        <p id="conv3" class="text-secondary fs-6 mb-2">Las credenciales llegarán por correo en 5 días hábiles</p>
+        <button id="bt-submit" type="submit" class="btn btn-primary mb-4">Enviar</button>
     </form>
 </div>
 <!-- inicio Modal -->
@@ -30,15 +63,15 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
         <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Charla Ignite</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Requisitos</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <h1>Qué es una presentación Ignite</h1>
-        <p>El formato Ignite consiste en una presentación de la idea central de un proyecto o visión en cinco minutos. Es un formato parecido al PechaKucha. Durante los 5 minutos de una presentación Ignite se exponen 20 transparencias o diapositivas para apoyar el discurso. Cada diapositiva tiene una duración de 15 escasos segundos por lo que la claridad es fundamental. 
-
-            La gran diferencia de la presentación Ignite respecto a otros formatos de presentación rápida es que tiene como objetivo contar una historia, una idea o visión que no tiene que ser necesariamente un proyecto empresarial, como sí que suele suceder con otros formatos.</p>
-            <a href="https://www.yoscoaching.com/blog/que-es-la-presentacion-ignite-y-como-se-hace-guia-de-5-pasos-para-crear-la-tuya/" target="new"><h6>Más información...</h6></a>
+            <h1>¿Cómo ser sponsor del evento?</h1>
+            <p>Los patrocinadores son una pieza fundamental para el desarrollo de eventos, congresos y convenciones. Por ello, aquí te contamos qué es un sponsor y, además, te damos algunos ejemplos originales para triunfar en el encuentro.</p>
+            <h1>Requisitos para ser patrocinante</h1>
+            <p>Puede ser patrocinante toda persona física o jurídica de carácter privado en sedes, instalaciones, programas y/o eventos públicos del Sector Privado de Tecnología de Buenos Aires.</p>
+        <a href="https://es.wikipedia.org/wiki/Patrocinio_(publicidad)" target="new"><h6>Más información...</h6></a>
         </div>
         <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>

@@ -78,7 +78,7 @@
 }
 
 nav{
-    background-color: rgb(63, 61, 61);
+    background-color: rgb(8, 54, 97);
     padding:0px 100px;  
 }
 .navbar-brand{
@@ -88,7 +88,7 @@ nav{
     color:white !important;
 }
 .top{
-    color:gray !important;
+    color:rgb(173, 171, 171) !important;
 }
 .mid{
     color: white;
@@ -104,12 +104,17 @@ nav{
     margin-right: 15%;
     text-align: right;
 }
+#floatingTextarea2{
+    margin-top: 2rem;
+}
 form{
     margin:0px 10%;
 }
 #bt-submit{
     width: 100%;
-    background-color: rgb(89, 175, 108);
+    background-color: rgb(38, 95, 168);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 .Opciones{
     margin: 2em 20% 0 32% !important;
@@ -158,9 +163,8 @@ form{
     nav{
         padding:0px 0px;  
     }
-    .btn-success{
+    .btn-primary{
         width:16rem!important;
-        background-color: rgb(89, 175, 108);
     }
     .llamadaAccion{
         position:absolute;
