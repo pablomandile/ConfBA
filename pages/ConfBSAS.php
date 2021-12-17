@@ -21,9 +21,9 @@
             include ('../views/serOrador.html'); 
         ?>
     </main>
-    <?php include ('../views/misScriptsJs.html'); ?>
+    <?php include ('../views/misScriptsJs.html');?>
     <footer>
-        <?php include ('../views/footerConfBA.html'); ?>
+        <?php include ('../views/footerConfBA.html');?>
     </footer>
 </body>
 </html>
