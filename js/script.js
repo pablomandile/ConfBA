@@ -94,5 +94,5 @@ categoria.addEventListener('click', e =>{
 // link logo
 
 document.getElementById("linkHome").onclick = function () {
-    location.href = "ConfBSAS.html";
+    location.href = "ConfBSAS.php";
 }

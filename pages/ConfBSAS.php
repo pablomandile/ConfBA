@@ -23,7 +23,7 @@
     </main>
     <?php include ('../views/misScriptsJs.html'); ?>
     <footer>
-        <?php include ('../views/footer.html'); ?>
+        <?php include ('../views/footerConfBA.html'); ?>
     </footer>
 </body>
 </html>
