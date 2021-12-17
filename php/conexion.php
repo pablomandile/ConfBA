@@ -1,6 +1,6 @@
 <?php
 $lugarBD = "localhost";
-$nombreBD = "alumnos2023";
+$nombreBD = "conferencia2021";
 $usuarioBD = "root";
 $claveBD = "";
 
