@@ -33,8 +33,12 @@ if($fila['tipoSponsor']=='Sponsor Plata'){
     <main>
         <div id="tituloFormModificar" class="col text-uppercase text-center">
             <h2>Modificar datos sponsor</h2>
+            
         </div>
+        
         <form action="../php/actualizar.php" method="POST" id="datosoradorModificar">
+        <a id="bt-volver" href="../php/listado.php"><button  type="button" class="btn btn-primary mb-4">Volver</button></a>
+            <input type="hidden" name="id" value="<?php echo $fila['id_sponsor']?>" >
             <div class="row mt-3 mb-3">
                 <div class="col">
                     <input type="text" class="form-control" placeholder="Nombre" aria-label="nombre" name="nombre" value="<?php echo $fila['nombre']?>" required>
@@ -84,7 +88,9 @@ if($fila['tipoSponsor']=='Sponsor Plata'){
                 </script>
             </div>
             <p id="conv3" class="text-secondary fs-6 mb-2">Las credenciales llegarán por correo en 5 días hábiles</p>
-            <button id="bt-submit" type="submit" class="btn btn-primary mb-4">Enviar</button>
+            <button id="bt-submit-up" type="submit" class="btn btn-primary mb-4">Actualizar Datos</button>
+      
+            
         </form>
     </main>
     <?php include ('../views/misScriptsJs.html');?>

@@ -1,8 +1,12 @@
 <?php
 $lugarBD = "localhost";
-$nombreBD = "conferencia2021";
-$usuarioBD = "root";
-$claveBD = "";
+$nombreBD = "u600612487_CONFBA";
+$usuarioBD = "u600612487_admin";
+$claveBD = "ConfBsAs2022!#";
+
+// $nombreBD = "conferencia2021";
+// $usuarioBD = "root";
+// $claveBD = "";
 
 $conexionBD = mysqli_connect($lugarBD, $usuarioBD, $claveBD, $nombreBD);
 if (mysqli_connect_errno()){
