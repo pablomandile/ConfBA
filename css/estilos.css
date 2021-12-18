@@ -155,7 +155,10 @@ form{
     justify-content: center;
     align-items: center;
 }
-@media (max-width: 1280px) {
+#btnOrador{
+    background-color: rgb(38, 95, 168)!important;
+}
+@media (max-width: 14250px) {
     footer{
         margin-top: 8em;
     }
@@ -163,8 +166,19 @@ form{
         width:360px;
         font-size: 0.7rem;
     }
+    #foot{
+        min-height: 80px!important;
+        position:relative!important;
+        bottom: 0!important;
+    }
+    #btnBorrar{
+        width: 15.5rem;
+    }
+    #btnResumen{
+        width: 15.5rem;
+    }
  }
- @media (max-width: 414px) {
+ @media (max-width: 1080px) {
     footer{
         margin-top: 12em;
     }
@@ -189,7 +203,7 @@ form{
     }
     .llamadaAccion{
         position:absolute;
-        top:30%;
+        top:40%;
         left:10%;
         color:white;
         margin-right: 15%;
@@ -197,6 +211,7 @@ form{
     }
     #btnOrador{
         width:16rem;
+        background-color: rgb(38, 95, 168);
     }
     #btnInfo{
         margin-bottom: 3rem;
@@ -210,4 +225,192 @@ form{
     #titulo1{
         margin-left: 2rem!important;
     }
+    #foot{
+        min-height: 80px!important;
+        position:relative!important;
+        bottom: 0!important;
+    }
+    #btnBorrar{
+        width: 15.5rem;
+    }
+    #btnResumen{
+        width: 15.5rem;
+    }
  }
+ @media (max-width: 562px) {
+    footer{
+        margin-top: 12em;
+    }
+    .Opciones{
+        margin: 2em 1rem 0 3.5rem !important;
+    }
+    .formTickets{
+        margin: 2rem 0 1em 4.5rem !important;
+    }
+    form{
+        margin:0 !important;
+        width:250px;
+    }
+    section{
+        width:360px;
+    }
+    nav{
+        padding:0px 0px;  
+    }
+    .btn-primary{
+        width:16rem!important;
+    }
+    .llamadaAccion{
+        position:absolute;
+        top:40%;
+        left:10%;
+        color:white;
+        margin-right: 15%;
+        text-align: right;
+    }
+    #btnOrador{
+        width:16rem;
+        background-color: rgb(38, 95, 168);
+    }
+    #btnInfo{
+        margin-bottom: 3rem;
+    }
+    #formorador{
+        width:100%;      
+    }
+    #datosorador{
+        margin-left: 4rem!important;
+    }
+    #titulo1{
+        margin-left: 2rem!important;
+    }
+    #foot{
+        min-height: 80px!important;
+        position:relative!important;
+        bottom: 0!important;
+    }
+    #btnBorrar{
+        width: 15.5rem;
+    }
+    #btnResumen{
+        width: 15.5rem;
+    }
+    #btnTickets{
+        margin-top: 1rem;
+    }
+}
+ @media (max-width: 412px) {
+    footer{
+        margin-top: 12em;
+    }
+    .Opciones{
+        margin: 2em 1rem 0 3.5rem !important;
+    }
+    .formTickets{
+        margin: 2rem 0 1em 4.5rem !important;
+    }
+    form{
+        margin:0 !important;
+        width:250px;
+    }
+    section{
+        width:360px;
+    }
+    nav{
+        padding:0px 0px;  
+    }
+    .btn-primary{
+        width:16rem!important;
+    }
+    .llamadaAccion{
+        position:absolute;
+        top:40%;
+        left:10%;
+        color:white;
+        margin-right: 15%;
+        text-align: right;
+    }
+    #btnOrador{
+        width:16rem;
+        background-color: rgb(38, 95, 168);
+    }
+    #btnInfo{
+        margin-bottom: 3rem;
+    }
+    #formorador{
+        width:100%;      
+    }
+    #datosorador{
+        margin-left: 4rem!important;
+    }
+    #titulo1{
+        margin-left: 2rem!important;
+    }
+    #foot{
+        min-height: 80px!important;
+        position:relative!important;
+        bottom: 0!important;
+    }
+    #btnBorrar{
+        width: 15.5rem;
+    }
+    #btnResumen{
+        width: 15.5rem;
+    }
+    #btnTickets{
+        margin-top: 1rem;
+    }
+ }
+ @media (max-width: 360px) {
+    .llamadaAccion{
+        position:absolute;
+        top:21rem;
+        left:10%;
+        color:white;
+        margin-right: 15%;
+        text-align: center;
+    }
+    #btnOrador{
+        width:6rem;
+        text-indent: -9999px !important;
+        line-height: 0 !important;
+    }
+    #btnOrador::after {
+        display:true;
+        content: 'Sponsor'; 
+        text-indent: 0 !important;
+        display: block !important;
+        line-height: initial !important;
+    }
+    #btnTickets{
+        width:6rem;
+        text-indent: -9999px !important;
+        line-height: 0 !important;
+        margin-top: 1rem;;
+    }
+        
+    #btnTickets::after {
+        display:true;
+        content: 'Entradas'; 
+        text-indent: 0 !important;
+        display: block !important;
+        line-height: initial !important;
+    }
+    #foot{
+        min-height: 80px!important;
+        position:relative!important;
+        bottom: 0!important;
+    }
+    #btnBorrar{
+        width: 15.5rem;
+    }
+    #btnResumen{
+        width: 15.5rem;
+    }
+    #secTarjetas{
+        margin-left: -10px;
+    }
+    #btnTickets{
+        margin-top: 0;
+    }
+}
