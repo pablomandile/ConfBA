@@ -18,31 +18,30 @@ $consulta = mysqli_query($conexionBD, "SELECT * FROM registro" );
     <header><?php include ('../views/header.html');?></header>
     <main>
         <!--Listado de Sponsors-->
+        <br>
         <div class="row">
                 <div class="col text-uppercase text-center">
-                <h2>Listado usuarios registrados</h2>
+                <h2>Listado sponsors registrados</h2>
                 </div>
             </div>
             <div class="row">
             </div>
             <div class="row">
                 <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
-                <table class="table table-primary table-striped">
+                <table class="table table-primary table-striped" id="tablaSponsors">
                     <thead>
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Nombre</th>
                         <th scope="col">Apellido</th>
                         <th scope="col">Correo</th>
-                        <th scope="col">Empresa</th>
                         <th scope="col">Telefono</th>
-                        <th scope="col">Invitado 1</th>
-                        <th scope="col">Invitado 2</th>
-                        <th scope="col">Invitado 3</th>
-                        <th scope="col">Sponsoreo</th>
-                        <th scope="col">Comentarios</th>
-                        <th scope="col">Actualizar</th>
-                        <th scope="col">Eliminar</th>
+                        <th scope="col">Empresa</th>
+                        <th scope="col">VIP 1</th>
+                        <th scope="col">VIP 2</th>
+                        <th scope="col">Tipo Sponsor</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -53,15 +52,13 @@ $consulta = mysqli_query($conexionBD, "SELECT * FROM registro" );
                         <td> <?php echo $tabla['nombre']; ?> </td>
                         <td> <?php echo $tabla['apellido']; ?> </td>
                         <td> <?php echo $tabla['correo']; ?> </td>
-                        <td> <?php echo $tabla['empresa']; ?> </td>
-                        <td> <?php echo $tabla['telefono']; ?> </td>      
+                        <td> <?php echo $tabla['telefono']; ?> </td>
+                        <td> <?php echo $tabla['empresa']; ?> </td>  
                         <td> <?php echo $tabla['vip1']; ?> </td>  
                         <td> <?php echo $tabla['vip2']; ?> </td>  
-                        <td> <?php echo $tabla['vip3']; ?> </td>  
                         <td> <?php echo $tabla['tipoSponsor']; ?> </td>  
-                        <td> <?php echo $tabla['comentarios']; ?> </td>                   
-                        <td> <a href="actualizar.php?id_sponsor=<?php echo $tabla['id_sponsor']; ?>"> Actualizar </a> </td>
-                        <td> <a href="eliminar.php?id_sponsor=<?php echo $tabla['id_sponsor']; ?>"> Eliminar </a> </td>
+                        <td> <a href="../pages/cambiarDatosSponsor.php?id_sponsor=<?php echo $tabla['id_sponsor']; ?>"><i class="fas fa-pencil-alt"></i> </a> </td>
+                        <td> <a href="eliminar.php?id_sponsor=<?php echo $tabla['id_sponsor']; ?>"><i class="fas fa-trash-alt"></i> </a> </td>
                         </tr>
                         <?php } ?>  
                     </tbody>
