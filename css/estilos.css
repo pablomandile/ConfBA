@@ -158,26 +158,7 @@ form{
 #btnOrador{
     background-color: rgb(38, 95, 168)!important;
 }
-@media (max-width: 14250px) {
-    footer{
-        margin-top: 8em;
-    }
-    #tablaSponsors{
-        width:360px;
-        font-size: 0.7rem;
-    }
-    #foot{
-        min-height: 80px!important;
-        position:relative!important;
-        bottom: 0!important;
-    }
-    #btnBorrar{
-        width: 15.5rem;
-    }
-    #btnResumen{
-        width: 15.5rem;
-    }
- }
+
  @media (max-width: 1080px) {
     footer{
         margin-top: 12em;
