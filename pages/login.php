@@ -1,10 +1,13 @@
 <?php
 if (isset($_POST['login'])){
+    echo $_POST['emailPHP']; 
+    echo $_POST['passwordPHP']; 
     $connection = new mysqli('localhost', 'root', '', 'conferencia2021');
     $email = $connection->real_escape_string($_POST['emailPHP']);
     $password = $connection->real_escape_string($_POST['passwordPHP']);
-    $data = $connection->query("SELECT id_usuario FROM users WHERE email='$email' AND password='$password'");
-    if ($data->num_rows > 0) {
+    $data = $connection->query("SELECT id_usuario FROM users WHERE correo='$email' AND password='$password'");
+    echo $data['$email'];
+    if ($data !== false && $data->num_rows > 0) {
         exit('Success');
     }else
         exit('Fallo');
@@ -62,8 +65,7 @@ if (isset($_POST['login'])){
             $("#login").on('click', function(){
                 var email = $("#email").val();
                 var password = $("#password").val();
-                console.log(email);
-
+                
                 if (email =="" || password == "")
                     alert('Por favor ingrese todos los datos');
                     else{
