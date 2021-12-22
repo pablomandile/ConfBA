@@ -1,0 +1,27 @@
+<div id="tituloLogin" class="col text-uppercase text-center">
+    <h2>Ingresa los datos de usuario</h2>
+</div>
+<form action="../php/insertar.php" method="POST" id="registroUsuario">
+    <div class="row mt-3 mb-3">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="nombre" name="nombre" required>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Apellido" aria-label="apellido" name="apellido" required>
+        </div>
+    </div>
+    <div class="row mt-3 mb-3">
+        <div class="col">
+            <input type="email" class="form-control" placeholder="Email" aria-label="correo" name="correo" required>
+        </div>
+    </div>
+    <div class="row mt-3 mb-3">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="password" aria-label="password1" name="password1" required>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="reingresar password" aria-label="password2" name="password2" required>
+        </div>
+    </div>
+    <button id="bt-submit" type="submit" class="btn btn-primary mb-4">Registrarse</button>
+</form>

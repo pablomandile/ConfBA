@@ -158,6 +158,23 @@ form{
 #btnOrador{
     background-color: rgb(38, 95, 168)!important;
 }
+#inicioSesion{
+    margin: auto;
+    width: 25%;
+}
+#tituloLogin{
+    margin-top: 6rem;;
+}
+#registroUsuario{
+    margin: auto;
+    width: 27%;
+}
+
+
+
+
+
+
 
  @media (max-width: 1080px) {
     footer{

@@ -1,5 +1,6 @@
 <?php
 $lugarBD = "localhost";
+
 // $nombreBD = "u600612487_CONFBA";
 // $usuarioBD = "u600612487_admin";
 // $claveBD = "ConfBsAs2022!#";
