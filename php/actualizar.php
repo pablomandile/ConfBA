@@ -27,7 +27,7 @@ if(!$actualizarBD){
     echo mysqli_error($conexionBD);
 }else{
     echo "Se inserto el registro";
-    header("location: ../php/listado.php");
+    header("location: ../pages/listado.php");
 }
 
 ?>

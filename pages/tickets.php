@@ -8,7 +8,7 @@
     <?php include ('../views/linksCssJs.html');?>
 </head>
 <body>
-    <header><?php include ('../views/header.html');?></header>
+    <header><?php include ('../php/header.html');?></header>
     <main><?php include ('../views/tickets.html');?></main>
     <footer><?php include ('../views/footer.html');?></footer>
     <?php include ('../views/misScriptsJs.html');?>

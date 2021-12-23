@@ -1,5 +1,5 @@
 <?php
-include 'conexion.php';
+include '../php/conexion.php';
 $consulta = mysqli_query($conexionBD, "SELECT * FROM registro" );
 // echo "<pre>";
 // var_dump($consulta);
@@ -15,7 +15,7 @@ $consulta = mysqli_query($conexionBD, "SELECT * FROM registro" );
     <?php include ('../views/linksCssJs.html'); ?>
 </head>
 <body>
-    <header><?php include ('../views/header.html');?></header>
+    <header><?php include ('../php/header.html');?></header>
     <main>
         <!--Listado de Sponsors-->
         <br>
@@ -58,7 +58,7 @@ $consulta = mysqli_query($conexionBD, "SELECT * FROM registro" );
                         <td> <?php echo $tabla['vip2']; ?> </td>  
                         <td> <?php echo $tabla['tipoSponsor']; ?> </td>  
                         <td> <a href="../pages/cambiarDatosSponsor.php?id_sponsor=<?php echo $tabla['id_sponsor']; ?>"><i class="fas fa-pencil-alt"></i> </a> </td>
-                        <td> <a href="eliminar.php?id_sponsor=<?php echo $tabla['id_sponsor']; ?>"><i class="fas fa-trash-alt"></i> </a> </td>
+                        <td> <a href="../php/eliminar.php?id_sponsor=<?php echo $tabla['id_sponsor']; ?>"><i class="fas fa-trash-alt"></i> </a> </td>
                         </tr>
                         <?php } ?>  
                     </tbody>

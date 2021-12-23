@@ -1,5 +1,12 @@
 
 <?php
+session_start();
+
+if(!isset($_SESSION['loggedIN'])){
+    header('Location: ../pages/login.php');
+    exit();
+}
+
 include 'conexion.php';
 $id=$_GET['id_sponsor'];
 $datoAeliminar = "DELETE FROM registro WHERE id_sponsor=$id";
@@ -9,6 +16,6 @@ if(!$delete){
     echo mysqli_error($conexionBD);
 }else{
     echo "Se inserto el registro";
-    header("location: ../php/listado.php");
+    header("location: ../pages/listado.php");
 }
 ?>

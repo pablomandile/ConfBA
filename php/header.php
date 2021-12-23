@@ -1,5 +1,5 @@
-<Header>
-    <!-- inicio navvar -->
+<!-- inicio navvar -->
+    <Header>
     <nav class="navbar navbar-expand-lg navbar-light col-sm-12">
     <div class="container-fluid">
         <a class="navbar-brand" id="linkHome" href="../pages/TechTalksBA.php"><img id="logo" src="../img/Techtalkonline_logo.png" alt="Logo corporativo"> TECH TALKS BSAS</a>
@@ -22,7 +22,19 @@
                 <a class="nav-link top" href="../pages/TechTalksBA.php#formorador">Conviértete en sponsor</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link top" href="../php/listado.php">Listado de Sponsors</a>
+                <a class="nav-link top" href="../pages/listado.php">Listado de Sponsors</a>
+            </li>
+            <li class="nav-item">
+                <?php 
+                    if(!isset($_SESSION['loggedIN'])){
+                        $login = '../pages/login.php';
+                        $sesion = 'Iniciar';
+                    } else{
+                        $login = '../php/logout.php';
+                        $sesion = 'Cerrar';
+                    }
+                 ?>
+                <a class="nav-link top" href="<?= $login?>"><?= $sesion?> Sesión</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link compra"href="../pages/tickets.php">Comprar entradas</a>
@@ -33,4 +45,4 @@
     </div>
     </nav>
 </header>
-    <!-- fin navvar -->
+<!-- fin navvar -->

@@ -17,7 +17,7 @@ include '../php/conexion.php';
 <body>
 <header>
     <?php 
-        include ('../views/header.html'); 
+        include ('../php/header.html'); 
     ?>
     </header>
     <main>

@@ -1,23 +1,25 @@
 <?php
+// usuario: admin@techtalksba.com.ar
+// passw: techtalksba2021
+
+session_start();
+if (isset($_SESSION['loggedIN'])){
+    header('Location: hidden.php');
+    exit();
+}
 if (isset($_POST['login'])){
-    echo $_POST['emailPHP']; 
-    echo $_POST['passwordPHP']; 
     $connection = new mysqli('localhost', 'root', '', 'conferencia2021');
     $email = $connection->real_escape_string($_POST['emailPHP']);
-    $password = $connection->real_escape_string($_POST['passwordPHP']);
+    $password = MD5($connection->real_escape_string($_POST['passwordPHP']));
     $data = $connection->query("SELECT id_usuario FROM users WHERE correo='$email' AND password='$password'");
-    echo $data['$email'];
+    
     if ($data !== false && $data->num_rows > 0) {
-        exit('Success');
+        $_SESSION['loggedIN'] = '1';
+        $_SESSION['email'] = $email;
+        exit('<font color="green">Se ha logueado con éxito...</font>');
     }else
-        exit('Fallo');
+        exit('<font color="red">Por favor compruebe que los datos ingresados sean correctos!</font>');
 }
-
-
-
-
-
-
 
 ?>
 
@@ -34,7 +36,7 @@ if (isset($_POST['login'])){
 <body>
 <header>
     <?php 
-        include ('../views/header.html'); 
+        include ('../php/header.html'); 
     ?>
     </header>
     <main>
@@ -54,6 +56,7 @@ if (isset($_POST['login'])){
     </div>
     <button id="login" type="button" class="btn btn-primary mb-4">Iniciar sesión</button>
 </form>
+<p id="response"></p>
     </main>
     <footer>
         <?php include ('../views/footer.html');?>
@@ -79,7 +82,9 @@ if (isset($_POST['login'])){
                                     passwordPHP: password
                                 },
                                 success: function (response){
-                                    console.log(response);
+                                    $("#response").html(response);
+                                    if (response.indexOf('éxito') >= 0)
+                                        window.location='../pages/hidden.php';
                                 },
                                 dataType: 'text'
                             });

@@ -29,7 +29,7 @@ if($fila['tipoSponsor']=='Sponsor Plata'){
     <?php include ('../views/linksCssJs.html'); ?>
 </head>
 <body>
-    <header><?php include ('../views/header.html');?></header>
+    <header><?php include ('../php/header.html');?></header>
     <main>
         <div id="tituloFormModificar" class="col text-uppercase text-center">
             <h2>Modificar datos sponsor</h2>
