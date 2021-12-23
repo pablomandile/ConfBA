@@ -203,7 +203,13 @@ form{
 .formulario__input-error-activo {
 	display: block;
 }
-
+#formContacto{
+    width: 40%;
+    margin: auto;
+}
+#btnContacto{
+    margin: 2rem auto 0 auto;
+}
 
 
 

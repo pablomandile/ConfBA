@@ -24,7 +24,7 @@ const validarFormulario = (e) => {
 		case "nombre":
 			if (expresiones.nombre.test(e.target.value)){
 				document.getElementById('grupoNombre').classList.remove('formulario__input-incorrecto');
-				document.getElementSById('grupoNombre').classList.add('formulario__input-correcto');
+				document.getElementById('grupoNombre').classList.add('formulario__input-correcto');
 				campos.nombre = true;
 			} else {
 				document.getElementById('grupoNombre').classList.add('formulario__input-incorrecto');

@@ -16,7 +16,7 @@
                 <a class="nav-link top" href="../pages/TechTalksBA.php#Oradores">Los oradores</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link top" href="../pages/TechTalksBA.php#Lugar">El lugar y la fecha</a>
+                <a class="nav-link top" href="../pages/TechTalksBA.php#Lugar">Lugar y fecha</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link top" href="../pages/TechTalksBA.php#formorador">Conviértete en sponsor</a>
@@ -35,6 +35,9 @@
                     }
                  ?>
                 <a class="nav-link top" href="<?= $login?>"><?= $sesion?> Sesión</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link top"href="../pages/formEmail.php">Contacto</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link compra"href="../pages/tickets.php">Comprar entradas</a>
