@@ -1,8 +1,5 @@
 <?php 
-if(!isset($_COOKIE["PHPSESSID"]))
-{
-  session_start();
-} 
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">

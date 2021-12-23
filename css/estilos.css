@@ -169,6 +169,10 @@ form{
     margin: auto;
     width: 27%;
 }
+#tablasp{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
 
 

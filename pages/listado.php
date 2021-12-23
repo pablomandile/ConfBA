@@ -1,13 +1,15 @@
 <?php
-if(!isset($_COOKIE["PHPSESSID"]))
+if(session_id() == "")
 {
-  session_start();
-}
+      session_start();
+} 
 include '../php/conexion.php';
 $consulta = mysqli_query($conexionBD, "SELECT * FROM registro" );
 // echo "<pre>";
 // var_dump($consulta);
 // echo "</pre>";
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +22,8 @@ $consulta = mysqli_query($conexionBD, "SELECT * FROM registro" );
 </head>
 <body>
     <header><?php include ('../php/header.php');?></header>
-    <main>
+    
+    <main id="tablasp">
         <!--Listado de Sponsors-->
         <br>
         <div class="row">
