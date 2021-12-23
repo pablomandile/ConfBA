@@ -71,7 +71,7 @@ $consulta = mysqli_query($conexionBD, "SELECT * FROM registro" );
                     </tbody>
                 </table>
         </main>
-        <?php include ('../views/misScriptsJs.html');?>
+        
         <footer><?php include ('../views/footer.html');?></footer>
 </body>
 </html>
