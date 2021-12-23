@@ -4,37 +4,37 @@
         <p  class="text-center text-secondary">CONVIÉRTETE EN UN</p>
         <h3>SPONSOR</h3>
         <p  class="text-center">Anótate como <span id="subrayado"><a href="#staticBackdrop" data-bs-toggle="modal" data-bs-target="#staticBackdrop">sponsor</a></span> del evento 
-        y obtiene pases VIP para todas las charlas y workshops para 3 personas!</p>
+        y obtiene pases VIP para todas las charlas y workshops para 2 personas!</p>
     </div>
     <form action="../php/insertar.php" method="POST" id="datosorador">
         <div class="row mt-3 mb-3">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="nombre" name="nombre" required>
+            <div class="col" >
+                <input type="text" id="grupoNombre" class="form-control" placeholder="Nombre" aria-label="nombre" name="nombre" required>
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="apellido" name="apellido" required>
-            </div>
-        </div>
-        <div class="row mt-3 mb-3">
-            <div class="col">
-                <input type="email" class="form-control" placeholder="Email" aria-label="correo" name="correo" required>
+                <input type="text" id="grupoApellido" class="form-control" placeholder="Apellido" aria-label="apellido" name="apellido" required>
             </div>
         </div>
         <div class="row mt-3 mb-3">
             <div class="col">
-                        <input type="text" class="form-control" placeholder="Telefono" aria-label="telefono" name="telefono" required>
+                <input type="email" id="grupoCorreo" class="form-control" placeholder="Email" aria-label="correo" name="correo" required>
+            </div>
+        </div>
+        <div class="row mt-3 mb-3">
+            <div class="col">
+                        <input type="text" id="grupoTelefono" class="form-control" placeholder="Telefono" aria-label="telefono" name="telefono" required>
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Empresa" aria-label="empresa" name="empresa" required>
+                <input type="text" id="grupoEmpresa" class="form-control" placeholder="Empresa" aria-label="empresa" name="empresa" required>
             </div>
         </div>
         <div class="row mt-3 mb-3">
             <p>Informanos quienes serán los participantes que serán VIP</p>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Nombre y apellido" aria-label="vip1" name="vip1" required>
+                <input type="text" id="grupoVip1" class="form-control" placeholder="Nombre y apellido" aria-label="vip1" name="vip1" required>
             </div>
             <div class="col">
-                <input type="text" class="form-control" placeholder="Nombre y apellido" aria-label="vip2" name="vip2" required>
+                <input type="text" id="grupoVip2" class="form-control" placeholder="Nombre y apellido" aria-label="vip2" name="vip2" required>
             </div>
         </div>
         <p>Elige el tipo de sponsor</p>

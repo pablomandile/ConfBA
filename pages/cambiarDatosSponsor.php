@@ -37,7 +37,7 @@ if($fila['tipoSponsor']=='Sponsor Plata'){
         </div>
         
         <form action="../php/actualizar.php" method="POST" id="datosoradorModificar">
-        <a id="bt-volver" href="../php/listado.php"><button  type="button" class="btn btn-primary mb-4">Volver</button></a>
+        <a id="bt-volver" href="../pages/listado.php"><button  type="button" class="btn btn-primary mb-4">Volver</button></a>
             <input type="hidden" name="id" value="<?php echo $fila['id_sponsor']?>" >
             <div class="row mt-3 mb-3">
                 <div class="col">

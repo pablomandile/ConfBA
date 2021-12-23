@@ -14,6 +14,6 @@ session_start();
     <header><?php include ('../php/header.php');?></header>
     <main><?php include ('../views/tickets.html');?></main>
     <footer><?php include ('../views/footer.html');?></footer>
-    <?php include ('../views/misScriptsJs.html');?>
+    <script src="../js/script.js"></script>
 </body>
 </html>

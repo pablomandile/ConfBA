@@ -59,7 +59,7 @@ if(!$insert){
     echo "No se ha realizado la inserción";
     echo mysqli_error($conexionBD);
 }else{
-    echo "Se inserto el registro";
+    echo "Se inserto el registro con éxito";
     header("location: ../pages/listado.php");
 }
 

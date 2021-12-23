@@ -90,7 +90,7 @@ nav{
     color:white !important;
 }
 .top{
-    color:rgb(173, 171, 171) !important;
+    color:rgb(216, 213, 213) !important;
 }
 .mid{
     color: white;
@@ -117,6 +117,12 @@ form{
     background-color: rgb(38, 95, 168);
     margin-top: 1rem;
     margin-bottom: 2rem;
+}
+.fa-location-arrow{
+    background-color: rgb(38, 95, 168)!important;
+}
+.fa-calendar-alt{
+    background-color: rgb(38, 95, 168)!important;
 }
 .Opciones{
     margin: 2em 20% 0 32% !important;
@@ -173,9 +179,30 @@ form{
     overflow-x: hidden;
     overflow-y: hidden;
 }
+#alertaConexion{
+    width:35%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    
+}
+.formulario__input-correcto {
+	border: 3px solid #1ed12d!important;
+}
 
 
+.formulario__input-incorrecto {
+	border: 3px solid #bb2929!important;
+}
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
 
+.formulario__input-error-activo {
+	display: block;
+}
 
 
 

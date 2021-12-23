@@ -20,9 +20,9 @@ if (isset($_POST['login'])){
     if ($data !== false && $data->num_rows > 0) {
         $_SESSION['loggedIN'] = '1';
         $_SESSION['email'] = $email;
-        exit('<div class="alert alert-success" role="alert">Se ha logueado con éxito...</div>');
+        exit('<div id="alertaConexion" class="alert alert-success" role="alert">Se ha logueado con éxito...</div>');
     }else
-        exit('<div class="alert alert-danger" role="alert">Por favor compruebe que los datos ingresados sean correctos!</div>');
+        exit('<div id="alertaConexion" class="alert alert-danger" role="alert">Por favor compruebe que los datos ingresados sean correctos!</div>');
 
 }
 

@@ -28,14 +28,8 @@ function calculoDescuento(){
             desc = 0;
         break;
     };
-    console.log(desc);
     totalAPagar = totalParcial - ((totalParcial * desc) / 100);
     total.value = 'Total a pagar: $' + totalAPagar;
-    console.log(nombre.value);
-    console.log(apellido.value);
-    console.log(cantidad.value);
-    console.log(categoria.value);
-    console.log(totalAPagar);
 }
 
 //hacer que las tarjetas de descuento interactúen con el form

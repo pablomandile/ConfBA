@@ -25,7 +25,8 @@ session_start();
             include ('../views/serOrador.html'); 
         ?>
     </main>
-    <?php include ('../views/misScriptsJs.html');?>
+    <script src="../js/home.js"></script>
+    <script src="../js/formulario.js"></script>
     <footer>
         <?php include ('../views/footerConfBA.html');?>
     </footer>
