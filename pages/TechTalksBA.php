@@ -1,3 +1,10 @@
+<?php 
+if(!isset($_COOKIE["PHPSESSID"]))
+{
+  session_start();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +17,7 @@
 <body>
     <header>
         <?php 
-            include ('../php/header.html'); 
+            include ('../php/header.php'); 
             include ('../views/carrusel.html'); 
         ?>
     </header>

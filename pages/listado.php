@@ -1,4 +1,8 @@
 <?php
+if(!isset($_COOKIE["PHPSESSID"]))
+{
+  session_start();
+}
 include '../php/conexion.php';
 $consulta = mysqli_query($conexionBD, "SELECT * FROM registro" );
 // echo "<pre>";
@@ -15,7 +19,7 @@ $consulta = mysqli_query($conexionBD, "SELECT * FROM registro" );
     <?php include ('../views/linksCssJs.html'); ?>
 </head>
 <body>
-    <header><?php include ('../php/header.html');?></header>
+    <header><?php include ('../php/header.php');?></header>
     <main>
         <!--Listado de Sponsors-->
         <br>

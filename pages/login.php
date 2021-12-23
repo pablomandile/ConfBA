@@ -4,15 +4,15 @@
 
 session_start();
 if (isset($_SESSION['loggedIN'])){
-    header('Location: hidden.php');
+    header('Location: ../pages/hidden.php');
     exit();
 }
+
 if (isset($_POST['login'])){
     $connection = new mysqli('localhost', 'root', '', 'conferencia2021');
-    $email = $connection->real_escape_string($_POST['emailPHP']);
-    $password = MD5($connection->real_escape_string($_POST['passwordPHP']));
+    $email = $_POST['emailPHP'];
+    $password = MD5($_POST['passwordPHP']);
     $data = $connection->query("SELECT id_usuario FROM users WHERE correo='$email' AND password='$password'");
-    
     if ($data !== false && $data->num_rows > 0) {
         $_SESSION['loggedIN'] = '1';
         $_SESSION['email'] = $email;
@@ -36,7 +36,7 @@ if (isset($_POST['login'])){
 <body>
 <header>
     <?php 
-        include ('../php/header.html'); 
+        include ('../php/header.php'); 
     ?>
     </header>
     <main>
@@ -62,7 +62,6 @@ if (isset($_POST['login'])){
         <?php include ('../views/footer.html');?>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <!-- <script src="../js/login.js"></script> -->
     <script type="text/javascript">
         $(document).ready(function(){
             $("#login").on('click', function(){
@@ -75,7 +74,7 @@ if (isset($_POST['login'])){
                         $.ajax(
                             {
                                 url: 'login.php',
-                                method: 'POST',
+                                method: "POST",
                                 data:{
                                     login:1,
                                     emailPHP: email,
@@ -87,6 +86,7 @@ if (isset($_POST['login'])){
                                         window.location='../pages/hidden.php';
                                 },
                                 dataType: 'text'
+
                             });
                     }
             });

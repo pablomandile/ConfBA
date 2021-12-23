@@ -1,10 +1,9 @@
 <?php
 session_start();
-
 if(!isset($_SESSION['loggedIN'])){
-    header('Location: login.php');
+    header('Location: ../pages/login.php');
     exit();
 }
-include ('listado.php');
+include ('../pages/listado.php');
 
 ?>

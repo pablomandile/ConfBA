@@ -1,3 +1,9 @@
+<?php 
+if(!isset($_COOKIE["PHPSESSID"]))
+{
+  session_start();
+} 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +14,7 @@
     <?php include ('../views/linksCssJs.html');?>
 </head>
 <body>
-    <header><?php include ('../php/header.html');?></header>
+    <header><?php include ('../php/header.php');?></header>
     <main><?php include ('../views/tickets.html');?></main>
     <footer><?php include ('../views/footer.html');?></footer>
     <?php include ('../views/misScriptsJs.html');?>
